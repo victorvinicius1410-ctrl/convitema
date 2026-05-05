@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffc4dd" />
+    <title>Convite — Michelle & Agatha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Great+Vibes&family=Nunito:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="state-splash">
+    <div class="invite-shell invite-shell--entering" id="invite-shell">
+      <div class="invite-card">
+      <main class="invite-content">
+        <!-- Texto de abertura só na tela inicial (splash); aqui segue direto ao monograma -->
+
+        <!-- Logo M.A — âncora 3D no “A” (ajuste .butterfly-anchor no CSS se precisar) -->
+        <div class="monogram-wrap">
+          <div class="monogram-ma" aria-label="Logo M.A — Michelle e Agatha">
+            <span id="butterfly-anchor" class="butterfly-anchor" aria-hidden="true"></span>
+            <img
+              class="monogram-logo"
+              src="logo.png"
+              width="360"
+              height="225"
+              alt="M.A — monograma Michelle e Agatha"
+              decoding="async"
+            />
+          </div>
+        </div>
+
+        <div class="invite-divider" aria-hidden="true"></div>
+
+        <h1 class="invite-names">Michelle &amp; Agatha</h1>
+
+        <p class="invite-subtitle">
+          Venha comemorar o Aniversário da Michelle e o Chá de Bebê da Agatha!
+        </p>
+
+        <section class="invite-details" aria-label="Detalhes do evento">
+          <p class="detail-line">
+            Sábado, <strong>30 de maio de 2026</strong>
+          </p>
+          <p class="detail-line detail-line--muted">A festa começa a partir das 14h</p>
+          <p class="detail-line detail-line--address">
+            Estrada São Carlos, 160 — Vila Ursulina, Itaquaquecetuba&nbsp;(SP)
+          </p>
+          <p class="detail-note" role="note">
+            Observação: a bebida é por conta de cada convidado (levem à parte).
+          </p>
+        </section>
+
+        <nav class="action-bar" aria-label="Ações do convite">
+          <a
+            class="action-btn"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Estrada+S%C3%A3o+Carlos+160%2C+Vila+Ursulina%2C+Itaquaquecetuba+-+SP"
+            id="btn-maps"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="action-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
+            </span>
+            <span class="action-label">Localização do evento</span>
+          </a>
+          <a
+            class="action-btn"
+            href="https://wa.me/5511967852130?text=Eu%20(seu%20nome)%20confirmo%20minha%20presen%C3%A7a%20nesse%20dia%20especial"
+            id="btn-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="action-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </span>
+            <span class="action-label">Confirmar presença</span>
+          </a>
+          <button type="button" class="action-btn action-btn--bare" id="btn-gift" aria-haspopup="dialog" aria-controls="gift-modal">
+            <span class="action-icon action-icon--gift" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-gift"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z"
+                />
+              </svg>
+            </span>
+            <span class="action-label">Sugestão de presente</span>
+          </button>
+        </nav>
+      </main>
+      </div>
+    </div>
+
+    <!-- WebGL: splash (clique na borboleta) → convite + pouso no A -->
+    <div id="canvas-container">
+      <canvas id="webgl-canvas"></canvas>
+    </div>
+
+    <div id="splash-ui" class="splash-ui">
+      <div class="splash-ui__top">
+        <p class="splash-header">Um momento de pura alegria!</p>
+        <p class="splash-loading" id="splash-loading">Carregando…</p>
+      </div>
+      <p class="splash-cta" id="splash-cta" hidden>
+        <span class="splash-cta-inner">Clique na borboleta</span>
+      </p>
+    </div>
+
+    <!-- Sugestões de presente — ?G|?M|?P = uma sugestão; sem param = as três (só após abrir pelo botão) -->
+    <dialog id="gift-modal" class="gift-modal" aria-labelledby="gift-modal-title">
+      <div class="gift-modal__backdrop" data-gift-close tabindex="-1" aria-hidden="true"></div>
+      <div class="gift-modal__panel">
+        <div class="gift-modal__header">
+          <h2 id="gift-modal-title" class="gift-modal__title">Sugestões de presente</h2>
+          <button type="button" class="gift-modal__icon-close" data-gift-close aria-label="Fechar">
+            ×
+          </button>
+        </div>
+        <p id="gift-modal-intro" class="gift-modal__intro">
+          Três sugestões (P, M e G) — escolha o que fizer sentido para você.
+        </p>
+        <ul class="gift-modal__list">
+          <li class="gift-modal__item" data-gift-key="p">
+            <p class="gift-modal__text">Fralda tamanho <strong>P</strong> e um mimo</p>
+          </li>
+          <li class="gift-modal__item" data-gift-key="m">
+            <p class="gift-modal__text">Fralda tamanho <strong>M</strong> e um mimo</p>
+          </li>
+          <li class="gift-modal__item" data-gift-key="g">
+            <p class="gift-modal__text">Fralda tamanho <strong>G</strong> e um mimo</p>
+          </li>
+        </ul>
+        <button type="button" class="gift-modal__close" data-gift-close>Fechar</button>
+      </div>
+    </dialog>
+
+    <!-- Música de fundo: o JS só inicia após gesto do utilizador (política dos navegadores) -->
+    <audio
+      id="invite-bg-audio"
+      src="musica.mp3"
+      preload="metadata"
+      loop
+      playsinline
+    >
+      Seu navegador não suporta áudio embutido.
+    </audio>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="experience.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

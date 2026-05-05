@@ -1,0 +1,8 @@
+{
+  "name": "convite-irma-agatha",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve .",
+    "serve": "npx --yes serve ."
+  }
+}
